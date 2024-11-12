@@ -1,0 +1,97 @@
+:root {
+  --primary-color: #0A5A3F;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-white, .btn-white:hover, .btn-white:focus, .btn-white:active {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border-color: var(--white-color);
+}
+
+.btn-outline-white, .btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white:active {
+  color: var(--white-color);
+  border-color: var(--white-color);
+}
+
+/* Navbar */
+
+.navbar-toggler {
+  padding: 0;
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: transparent;
+  border: none;
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link.active {
+  text-decoration: underline 3px var(--white-color);
+}
+
+.nav-link:hover {
+  text-decoration: underline 3px var(--white-color);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* Dropdown menu */
+.dropdown .dropdown-menu {
+  transition: all 0.4s;
+
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.dropdown-menu {
+  top: 100%;
+  left: 0;
+  margin-top: 0 !important;
+}
+
+.dropdown-menu.show { /* For Bootstrap 4, use .dropdown.show instead of .dropdown.open */
+  max-height: 500px;
+  opacity: 1;
+}
